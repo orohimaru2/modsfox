@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameMods - Платформа модов для игр</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-gamepad"></i>
+                    <span>GameMods</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a>
+                    <a href="games.html"><i class="fas fa-gamepad"></i> Игры</a>
+                    <a href="mods.html"><i class="fas fa-download"></i> Моды</a>
+                    <a href="categories.html"><i class="fas fa-folder"></i> Категории</a>
+                    <a href="community.html"><i class="fas fa-users"></i> Сообщество</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Поиск модов...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="login.html" class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> Вход</a>
+                    <a href="register.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Регистрация</a>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Лучшие моды для твоих любимых игр</h1>
+                <p>Тысячи модификаций для популярных игр. Скачивай бесплатно и без регистрации!</p>
+                <div class="hero-buttons">
+                    <a href="mods.html" class="btn btn-primary btn-lg"><i class="fas fa-download"></i> Смотреть моды</a>
+                    <a href="upload.html" class="btn btn-outline btn-lg"><i class="fas fa-upload"></i> Загрузить мод</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-download"></i>
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Скачиваний</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-cube"></i>
+                        <span class="stat-number">2K+</span>
+                        <span class="stat-label">Модов</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Пользователей</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">Рейтинг</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Games -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-gamepad"></i> Популярные игры</h2>
+                <a href="games.html" class="view-all">Все игры <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=400" alt="The Witcher 3">
+                        <div class="game-overlay">
+                            <span class="mod-count"><i class="fas fa-cube"></i> 245 модов</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>The Witcher 3</h3>
+                        <p>CD Projekt Red</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400" alt="Skyrim">
+                        <div class="game-overlay">
+                            <span class="mod-count"><i class="fas fa-cube"></i> 1,234 модов</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Skyrim</h3>
+                        <p>Bethesda Game Studios</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1592150621744-aca69f2d8488?w=400" alt="Cyberpunk 2077">
+                        <div class="game-overlay">
+                            <span class="mod-count"><i class="fas fa-cube"></i> 189 модов</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Cyberpunk 2077</h3>
+                        <p>CD Projekt</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1587573089734-09cb69c0f2b4?w=400" alt="Minecraft">
+                        <div class="game-overlay">
+                            <span class="mod-count"><i class="fas fa-cube"></i> 3,456 модов</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Minecraft</h3>
+                        <p>Mojang Studios</p>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400" alt="GTA V">
+                        <div class="game-overlay">
+                            <span class="mod-count"><i class="fas fa-cube"></i> 892 модов</span>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>GTA V</h3>
+                        <p>Rockstar Games</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Mods -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Избранные моды</h2>
+                <a href="mods.html" class="view-all">Все моды <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="mods-grid">
+                <div class="mod-card featured">
+                    <div class="mod-badge"><i class="fas fa-crown"></i> TOP</div>
+                    <div class="mod-image">
+                        <img src="https://images.unsplash.com/photo-1612287230217-969b698c8b63?w=400" alt="HD Graphics Mod">
+                        <div class="mod-actions">
+                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                            <button class="btn-icon"><i class="fas fa-download"></i></button>
+                            <button class="btn-icon"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="mod-info">
+                        <div class="mod-category"><i class="fas fa-image"></i> Графика</div>
+                        <h3>HD Texture Pack 4K</h3>
+                        <div class="mod-meta">
+                            <span><i class="fas fa-gamepad"></i> The Witcher 3</span>
+                            <span><i class="fas fa-user"></i> ModMaster</span>
+                        </div>
+                        <div class="mod-stats">
+                            <span><i class="fas fa-download"></i> 12.5K</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-eye"></i> 45K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-card">
+                    <div class="mod-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400" alt="New Weapons">
+                        <div class="mod-actions">
+                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                            <button class="btn-icon"><i class="fas fa-download"></i></button>
+                            <button class="btn-icon"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="mod-info">
+                        <div class="mod-category"><i class="fas fa-gun"></i> Оружие</div>
+                        <h3>New Weapons Pack</h3>
+                        <div class="mod-meta">
+                            <span><i class="fas fa-gamepad"></i> Skyrim</span>
+                            <span><i class="fas fa-user"></i> WeaponSmith</span>
+                        </div>
+                        <div class="mod-stats">
+                            <span><i class="fas fa-download"></i> 8.2K</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                            <span><i class="fas fa-eye"></i> 32K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-card">
+                    <div class="mod-image">
+                        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400" alt="Character Mod">
+                        <div class="mod-actions">
+                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                            <button class="btn-icon"><i class="fas fa-download"></i></button>
+                            <button class="btn-icon"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="mod-info">
+                        <div class="mod-category"><i class="fas fa-user"></i> Персонажи</div>
+                        <h3>New Character Models</h3>
+                        <div class="mod-meta">
+                            <span><i class="fas fa-gamepad"></i> Cyberpunk 2077</span>
+                            <span><i class="fas fa-user"></i> ArtisanMod</span>
+                        </div>
+                        <div class="mod-stats">
+                            <span><i class="fas fa-download"></i> 6.7K</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-eye"></i> 28K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mod-card">
+                    <div class="mod-image">
+                        <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=400" alt="Map Extension">
+                        <div class="mod-actions">
+                            <button class="btn-icon"><i class="fas fa-heart"></i></button>
+                            <button class="btn-icon"><i class="fas fa-download"></i></button>
+                            <button class="btn-icon"><i class="fas fa-share"></i></button>
+                        </div>
+                    </div>
+                    <div class="mod-info">
+                        <div class="mod-category"><i class="fas fa-map"></i> Карты</div>
+                        <h3>New World Map</h3>
+                        <div class="mod-meta">
+                            <span><i class="fas fa-gamepad"></i> Minecraft</span>
+                            <span><i class="fas fa-user"></i> MapBuilder</span>
+                        </div>
+                        <div class="mod-stats">
+                            <span><i class="fas fa-download"></i> 15.3K</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-eye"></i> 67K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-folder"></i> Категории модов</h2>
+                <a href="categories.html" class="view-all">Все категории <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="categories-grid">
+                <a href="category.html?slug=graphics" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Графика</h3>
+                    <span class="category-count">1,234 мода</span>
+                </a>
+                <a href="category.html?slug=gameplay" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Геймплей</h3>
+                    <span class="category-count">892 мода</span>
+                </a>
+                <a href="category.html?slug=characters" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Персонажи</h3>
+                    <span class="category-count">567 модов</span>
+                </a>
+                <a href="category.html?slug=weapons" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gun"></i>
+                    </div>
+                    <h3>Оружие</h3>
+                    <span class="category-count">423 мода</span>
+                </a>
+                <a href="category.html?slug=vehicles" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Транспорт</h3>
+                    <span class="category-count">312 модов</span>
+                </a>
+                <a href="category.html?slug=maps" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3>Карты</h3>
+                    <span class="category-count">289 модов</span>
+                </a>
+                <a href="category.html?slug=scripts" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Скрипты</h3>
+                    <span class="category-count">198 модов</span>
+                </a>
+                <a href="category.html?slug=other" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Другое</h3>
+                    <span class="category-count">156 модов</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Mods -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-clock"></i> Новые моды</h2>
+                <a href="mods.html" class="view-all">Все моды <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="mods-list">
+                <div class="mod-list-item">
+                    <div class="mod-list-image">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=200" alt="Mod">
+                    </div>
+                    <div class="mod-list-info">
+                        <h4>Realistic Weather Mod</h4>
+                        <div class="mod-list-meta">
+                            <span><i class="fas fa-gamepad"></i> Skyrim</span>
+                            <span><i class="fas fa-folder"></i> Графика</span>
+                            <span><i class="fas fa-user"></i> WeatherMaster</span>
+                            <span><i class="fas fa-calendar"></i> 2 часа назад</span>
+                        </div>
+                    </div>
+                    <div class="mod-list-stats">
+                        <span><i class="fas fa-download"></i> 234</span>
+                        <span><i class="fas fa-star"></i> 4.5</span>
+                        <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="mod-list-item">
+                    <div class="mod-list-image">
+                        <img src="https://images.unsplash.com/photo-1592150621744-aca69f2d8488?w=200" alt="Mod">
+                    </div>
+                    <div class="mod-list-info">
+                        <h4>Night City Enhancement</h4>
+                        <div class="mod-list-meta">
+                            <span><i class="fas fa-gamepad"></i> Cyberpunk 2077</span>
+                            <span><i class="fas fa-folder"></i> Графика</span>
+                            <span><i class="fas fa-user"></i> NightCityDev</span>
+                            <span><i class="fas fa-calendar"></i> 5 часов назад</span>
+                        </div>
+                    </div>
+                    <div class="mod-list-stats">
+                        <span><i class="fas fa-download"></i> 567</span>
+                        <span><i class="fas fa-star"></i> 4.8</span>
+                        <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="mod-list-item">
+                    <div class="mod-list-image">
+                        <img src="https://images.unsplash.com/photo-1587573089734-09cb69c0f2b4?w=200" alt="Mod">
+                    </div>
+                    <div class="mod-list-info">
+                        <h4>New Biomes Pack</h4>
+                        <div class="mod-list-meta">
+                            <span><i class="fas fa-gamepad"></i> Minecraft</span>
+                            <span><i class="fas fa-folder"></i> Карты</span>
+                            <span><i class="fas fa-user"></i> BiomeBuilder</span>
+                            <span><i class="fas fa-calendar"></i> 1 день назад</span>
+                        </div>
+                    </div>
+                    <div class="mod-list-stats">
+                        <span><i class="fas fa-download"></i> 1.2K</span>
+                        <span><i class="fas fa-star"></i> 4.9</span>
+                        <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2><i class="fas fa-upload"></i> Создавай и делись своими модами</h2>
+                <p>Присоединяйся к нашему сообществу моддеров и делись своими творениями с тысячами игроков</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn btn-primary btn-lg"><i class="fas fa-user-plus"></i> Зарегистрироваться</a>
+                    <a href="upload.html" class="btn btn-outline-light btn-lg"><i class="fas fa-upload"></i> Загрузить мод</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GameMods</span>
+                    </div>
+                    <p>Лучшая платформа для модов к играм. Тысячи модификаций для популярных игр.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                        <li><a href="games.html"><i class="fas fa-gamepad"></i> Игры</a></li>
+                        <li><a href="mods.html"><i class="fas fa-download"></i> Моды</a></li>
+                        <li><a href="categories.html"><i class="fas fa-folder"></i> Категории</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Сообщество</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-users"></i> Форум</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> Блог</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> Помощь</a></li>
+                        <li><a href="#"><i class="fas fa-file-contract"></i> Правила</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> О нас</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Контакты</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Политика конфиденциальности</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GameMods. Все права защищены.</p>
+                <p>Сделано с <i class="fas fa-heart"></i> для геймеров</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
